@@ -191,6 +191,13 @@
                 transform: scale(0.9); 
             }
             */
+            .casestudy {
+                transition: all .2s ease-in-out;
+            }
+            .casestudy:hover {
+                transition: 0.4s;
+                transform: scale(0.9); 
+            }
         }
     </style>
 </head>
@@ -518,9 +525,21 @@
   
        <div id="myModal_case" class="modal">
             <div id="myModal_case-content"class="modal-content">
-                 <span class="close_case">&times;</span>
-                 <h1 class="contenttitle">Case Studies</h1>
-                 <h2>All future case studies will be uploaded here! Check back soon!</h2>
+                <span class="close_case">&times;</span>
+                <h1 class="contenttitle">Case Studies</h1>
+                <main class="contentmain">
+                    <div id="firstleft">
+                        <a href="http://liammailley.com/idm232/casestudy/">
+                            <img src="images/hero-232.jpg" alt="Charcoal Final" class="contentimages casestudy">
+                        </a>
+                    </div>
+                    
+                    <div id="firstright">
+                        <a href="http://liammailley.com/idm241/casestudy/">
+                            <img src="images/hero-241.png" alt="Charcoal Final" class="contentimages casestudy">
+                        </a>
+                    </div>
+                </main>
             </div>
        </div>
   

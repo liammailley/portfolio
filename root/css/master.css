@@ -506,4 +506,12 @@ p.artdesc {
     text-align: center;
 }
 
+.casestudy {
+    transition: all .2s ease-in-out;
+}
+.casestudy:hover {
+    transition: 0.4s;
+    transform: scale(0.9); 
+}
+
 /* THIS ONE IS ONLY USED WHEN IT'S LESS THAN 800px */
