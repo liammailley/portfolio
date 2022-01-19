@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../css/master.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Mailley - Work</title>
+    <style>
+        @media only screen and (min-width: 800px) { /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 800px */
+        header {
+                display: grid;
+                grid-template-columns: 1.5fr 3fr 1.5fr;
+                justify-content: space-evenly;
+                background-color: #eb5e55;
+                position: sticky;
+                max-width: 100%;
+                overflow: auto;
+                margin: auto;
+                top: 0;
+                padding: 0.2rem 0;
+            }
+            .socials-container {
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-end;
+                margin: auto 0;
+                max-width: 15%;
+            }
+            .socials {
+                max-width: 2rem;
+                padding: 0 0.5rem;
+                transition: all .2s ease-in-out;
+            }
+            .socials:hover {
+                transition: 0.4s;
+                transform: scale(0.75); 
+            }
+            .outer-nav-container {
+                display: flex;
+                flex-flow: column;
+                max-width: 40%;
+            }
+            .nav-container {
+                display: flex;
+                flex-flow: row;
+                justify-content: flex-start;
+            }
+            .bigbold {
+                letter-spacing: 0.2rem;
+                margin: 2rem 0 0 0;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #000000;
+                text-align: center;
+            }
+            .bigbold-sub {
+                margin-left: 10px;
+            }
+            main {
+                background-color: #fdf0d5;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .greetings {
+                display: flex;
+                justify-content: center;
+                font-size: 3.2rem;
+                margin: 1rem 10px;
+            }
+            .bio {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                font-size: 2rem;
+                margin: 1rem 10px;
+                align-content: center;
+                max-width: 58.3125rem;
+            }
+            .headshot {
+                padding: 0 0 0 2rem;
+            }
+
+            /* Non-Header Styling */
+
+            /* Content Pages Grid Code */
+
+            .contentmain {
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+
+            .contenttitle {
+                font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+                margin: 1rem;
+            }
+
+            .contentdesc {
+                margin: 1rem;
+            }
+
+            .contentimages {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            #firstleft {
+                grid-column: 1;
+                grid-row: 1;
+                border: 20px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 25rem;
+                text-align: right;
+                float: right;
+            }
+
+            #firstright {
+                grid-column: 2;
+                grid-row: 1;
+                border: 20px solid #fdf0d5;
+                max-width: 100%;
+                height: 25rem;
+                text-align: left;
+                float: left;
+            }
+
+            #secondleft {
+                grid-column: 1;
+                grid-row: 2;
+                border: 20px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 25rem;
+                text-align: right;
+                float: right;
+            }
+
+            #secondright {
+                grid-column: 2;
+                grid-row: 2;
+                border: 20px solid #fdf0d5;
+                max-width: 100%;
+                height: 25rem;
+                text-align: left;
+                float: left;
+            }
+
+            #thirdleft {
+                grid-column: 1;
+                grid-row: 3;
+                border: 20px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 25rem;
+                text-align: right;
+                float: right;
+            }
+
+            #thirdright {
+                grid-column: 2;
+                grid-row: 3;
+                border: 20px solid #fdf0d5;
+                max-width: 100%;
+                height: 25rem;
+                text-align: left;
+                float: left;
+            }
+
+            #fourthleft {
+                grid-column: 1;
+                grid-row: 4;
+                border: 20px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 25rem;
+                text-align: right;
+                float: right;
+            }
+
+            #fourthright {
+                grid-column: 2;
+                grid-row: 4;
+                border: 20px solid #fdf0d5;
+                max-width: 100%;
+                height: 25rem;
+                text-align: left;
+                float: left;
+            }
+
+            #fifthleft {
+                grid-column: 1;
+                grid-row: 5;
+                border: 20px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 25rem;
+                text-align: right;
+                float: right;
+            }
+
+            #fifthright {
+                grid-column: 2;
+                grid-row: 5;
+                border: 20px solid #fdf0d5;
+                max-width: 100%;
+                height: 25rem;
+                text-align: left;
+                float: left;
+            }
+
+            #sixthleft {
+                grid-column: 1;
+                grid-row: 6;
+                border: 20px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 25rem;
+                text-align: right;
+                float: right;
+            }
+
+            #sixthright {
+                grid-column: 2;
+                grid-row: 6;
+                border: 20px solid #fdf0d5;
+                max-width: 100%;
+                height: 25rem;
+                text-align: left;
+                float: left;
+            }
+
+            #seventhleft {
+                grid-column: 1;
+                grid-row: 7;
+                border: 20px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 25rem;
+                text-align: right;
+                float: right;
+            }
+
+            #seventhright {
+                grid-column: 2;
+                grid-row: 7;
+                border: 20px solid #fdf0d5;
+                max-width: 100%;
+                height: 25rem;
+                text-align: left;
+                float: left;
+            }
+            .navbutton {
+                transition: all .2s ease-in-out;
+            }
+            .navbutton:hover {
+                transition: 0.4s;
+                transform: scale(0.9); 
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="socials-container">
+            <a href="https://www.instagram.com/liammailley">
+                <img src="../images/insta_45x45.png" alt="Instagram Logo" class="socials">
+            </a>
+            <a href="https://www.linkedin.com/in/liam-mailley-bb5b69185">
+                <img src="../images/linkedin_45x45.png" alt="Linkedin Logo" class="socials">
+            </a>
+            <a href="https://github.com/liammailley">
+                <img src="../images/github_45x45.png" alt="Github Logo" class="socials">
+            </a>
+        </div>
+        <br>
+        <h1 class="bigbold">
+            LIAM MAILLEY
+        </h1>
+        <div class="outer-nav-container">
+            <p class="bigbold-sub">
+                student - ux/ui designer
+            </p>
+            <div class="nav-container">
+                <p class="navbutton">
+                    <a class="buttontext" href="../../index.html">
+                        HOME
+                    </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="../work.html">
+                        WORK
+                </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="../resume.html">
+                        RESUME
+                    </a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="contentmain">
+
+        <div id="firstleft">
+            <h1 class="contenttitle">
+                DUCK Clothing
+            </h1>
+            <p class="contentdesc">
+                Entire line of duck-themed clothing designed for my little brother. All clothing designs and site setup are by me; you can check it out at duckclothing.storenvy.com.
+            </p>
+        </div>
+
+        <div id="firstright">
+            <img src="../images/duck.webp" alt="DUCK" class="contentimages">
+        </div>
+
+
+        <div id="secondleft">
+            <img src="../images/lightpollution.webp" alt="Light Pollution" class="contentimages">
+        </div>
+
+        <div id="secondright">
+            <h1 class="contenttitle">
+                <em>Four Alarm - Light Pollution</em> Album Cover
+            </h1>
+            <p class="contentdesc">
+                Album cover for my upcoming debut album! Stay tuned!
+            </p>
+        </div>
+
+
+        <div id="thirdleft">
+            <h1 class="contenttitle">
+                Scene From <em>Inception</em>
+            </h1>
+            <p class="contentdesc">
+                Vector-traced movie still, recreated using black, white, and 3 shades of gray in-between.
+            </p>
+        </div>
+
+        <div id="thirdright">
+            <img src="../images/inception.webp" alt="Inception" class="contentimages">
+        </div>
+
+
+        <div id="fourthleft">
+            <img src="../images/pollen.webp" alt="Pollen" class="contentimages">
+        </div>
+
+        <div id="fourthright">
+            <h1 class="contenttitle">
+                Pollen
+            </h1>
+            <p class="contentdesc">
+                An album cover comissioned by a friend of mine. Features custom typography and photography.
+            </p>
+        </div>
+
+
+        <div id="fifthleft">
+            <h1 class="contenttitle">
+                Pop-Art Self Portrait
+            </h1>
+            <p class="contentdesc">
+                An assignment for Design II. Created via vector tracing of collaged images.
+            </p>
+        </div>
+
+        <div id="fifthright">
+            <img src="../images/colorfulportrait.webp" alt="Design II Final" class="contentimages">
+        </div>
+
+
+        <div id="sixthleft">
+            <img src="../images/desktop.webp" alt="My Desktop" class="contentimages">
+        </div>
+
+        <div id="sixthright">
+            <h1 class="contenttitle">
+                <em>My Desktop</em>
+            </h1>
+            <p class="contentdesc">
+                Eccentric and cluttered pop-art piece, taken via screenshot of my laptop desktop.
+            </p>
+        </div>
+
+
+        <div id="seventhleft">
+            <h1 class="contenttitle">
+                Drexel Collage
+            </h1>
+            <p class="contentdesc">
+                Personal piece, experimenting with text, depth, and vibrating edge.
+            </p>
+        </div>
+
+        <div id="seventhright">
+            <img src="../images/drexelcollage.webp" alt="Drexel Collage" class="contentimages">
+        </div>
+
+
+    </main>
+
+</body>
+</html>

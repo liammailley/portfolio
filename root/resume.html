@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/master.css" rel="stylesheet" type="text/css" media="all">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Mailley - Resume</title>
+    <style>
+        @media only screen and (min-width: 800px) {  /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 800px */
+            header {
+                display: grid;
+                grid-template-columns: 1.5fr 3fr 1.5fr;
+                justify-content: space-evenly;
+                background-color: #eb5e55;
+                position: sticky;
+                max-width: 100%;
+                overflow: auto;
+                margin: auto;
+                top: 0;
+                padding: 0.2rem 0;
+            }
+            .socials-container {
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-end;
+                margin: auto 0;
+                max-width: 15%;
+            }
+            .socials {
+                max-width: 2rem;
+                padding: 0 0.5rem;
+                transition: all .2s ease-in-out;
+            }
+            .socials:hover {
+                transition: 0.4s;
+                transform: scale(0.75); 
+            }
+            .outer-nav-container {
+                display: flex;
+                flex-flow: column;
+                max-width: 40%;
+            }
+            .nav-container {
+                display: flex;
+                flex-flow: row;
+                justify-content: flex-start;
+            }
+            .bigbold {
+                letter-spacing: 0.2rem;
+                margin: 2rem 0 0 0;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #000000;
+                text-align: center;
+            }
+            .bigbold-sub {
+                margin-left: 10px;
+            }
+            main {
+                background-color: #fdf0d5;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .greetings {
+                display: flex;
+                justify-content: center;
+                font-size: 3.2rem;
+                margin: 1rem 10px;
+            }
+            .bio {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                font-size: 2rem;
+                margin: 1rem 10px;
+                align-content: center;
+            }
+            .headshot {
+                padding: 0 0 0 2rem;
+            }
+            
+            /* Non-Header Styling */
+
+            .resumemain {
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                max-height: 100%;
+                margin: 0;
+                padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+                max-width: 100%;
+            }
+            .resumename {
+                text-align: center;
+                margin-top: 0;
+                font-size: 2.5rem;
+            }
+            .resumeaddress {
+                text-align: center;
+                font-size: 1.4rem;
+            }
+            h2.resume {
+                font-size: 1.5rem;
+            }
+            p.resume {
+                font-size: 1rem;
+            }
+            ul.resume {
+                font-size: 1.2rem;
+                font-family: 'Chai', Arial, Helvetica, sans-serif;
+            }
+            .resume {
+                text-align: left;
+            }
+
+            a.downloadlink {
+                color: #007f81;
+            }
+
+            .downloadbutton {
+                text-align: center;
+                padding: 1rem 1.5rem;
+                border-radius: 1rem;
+                text-decoration: none;
+                font-size: 2rem;
+                transition-duration: 0.5s;
+                margin: auto;
+                max-width: 500px;
+                border-top: 5px dotted black;
+            }
+            .downloadbutton:active {
+                background-color: #28afb0;
+            }
+            .navbutton {
+                transition: all .2s ease-in-out;
+            }
+            .navbutton:hover {
+                transition: 0.4s;
+                transform: scale(0.9); 
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <div class="socials-container">
+            <a href="https://www.instagram.com/liammailley">
+                <img src="images/insta_45x45.png" alt="Instagram Logo" class="socials">
+            </a>
+            <a href="https://www.linkedin.com/in/liam-mailley-bb5b69185">
+                <img src="images/linkedin_45x45.png" alt="Linkedin Logo" class="socials">
+            </a>
+            <a href="https://github.com/liammailley">
+                <img src="images/github_45x45.png" alt="Github Logo" class="socials">
+            </a>
+        </div>
+        <br>
+        <h1 class="bigbold">
+            LIAM MAILLEY
+        </h1>
+        <div class="outer-nav-container">
+            <p class="bigbold-sub">
+                student - ux/ui designer
+            </p>
+            <div class="nav-container">
+                <p class="navbutton">
+                    <a class="buttontext" href="../index.html">
+                        HOME
+                    </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="work.html">
+                        WORK
+                </a>
+                </p>
+                <p class="navbutton">
+                    <a class="youarehere">
+                        RESUME
+                    </a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="resumemain">
+
+        <h2 class="resume">
+            Education
+        </h2>
+        <ul class="resume">
+            <li>Drexel University, Philadelphia, PA</li>
+            <li>Bachelor of Science in User Experience & Interaction Design, Anticipated Graduation: June 2024</li>
+            <li>Cumulative GPA: 3.8</li>
+        </ul>
+
+        <h2 class="resume">
+            Skills
+        </h2>
+        <ul class="resume">
+            <li>Proficient in Photoshop, Illustrator, Premiere, Figma, Excel, Ableton Live</li>
+            <li>Knows HTML, CSS, JS, PHP</li>
+        </ul>
+
+
+        <h2 class="resume">
+            Experience
+        </h2>
+
+        <p class="resume">
+            Pegasus Production Company, Lincroft, NJ <br>
+            Charity Manager, September 2017 to June 2019 
+        </p>
+        <ul class="resume">
+            <li>Organized marketing events by reaching out to various charities</li>
+            <li>Worked with a team to set up a sensory-friendly play with My Special Place, a local charity</li>
+            <li>Helped prepare actors and lighting for sensory-friendly show</li>
+        </ul>
+
+        <p class="resume">
+            SEMGeeks, Belmar, NJ <br>
+            Intern, June to August 2018
+        </p>
+        <ul class="resume">
+            <li>Shadowed focus groups to learn about user interface design</li>
+            <li>Wrote weekly blog posts on behalf of company to attract users to site</li>
+            <li>Helped organize 2018 NJ Digital Marketing Conference, which attracted companies from around the country</li>
+        </ul>
+
+        <p class="resume">
+            Drexel University Graduate School of Biomedical Sciences, Philadelphia, PA <br>
+            Web Content Developer and Writer, April to September 2021
+        </p>
+        <ul class="resume">
+            <li>Helped create a permanent request for content cycle for the graduate school’s web content team</li>
+            <li>Designed info-graphics, following corporate branding</li>
+            <li>Performed user tests on a student report submission page, ensured it was error-free</li>
+            <li>Developed familiarity with the Microsoft Office suite</li>
+            <li>Honed skills with Photoshop and Figma</li>
+        </ul>
+
+        <p class="resume">
+            Getting Out By Going In, Los Angeles, CA <br>
+            Media Services, April to August 2021
+        </p>
+        <ul class="resume">
+            <li>Updated appearance and content of current Wordpress site</li>
+            <li>Edited weekly podcasts</li>
+            <li>Created meditation background music for podcasts</li>
+            <li>Worked to brainstorm future plans and outreach for the charity</li>
+        </ul>
+
+
+        <h2 class="resume">
+            Relevant Coursework
+        </h2>
+        <ul class="resume">
+            <li>Human Factors & Cognitive Engineering</li>
+            <li>Design For Media</li>
+            <li>User Experience Design</li>
+            <li>User Interface Design</li>
+            <li>Microinteractions</li>
+            <li>General Psychology I</li>
+            <li>Interaction Design</li>
+        </ul>
+
+        <h2 class="resume">
+            Honors and Awards
+        </h2>
+        <ul class="resume">
+            <li>A.J. Drexel Scholarship, Drexel University, 2019-present</li>
+            <li>Performing Arts Scholarship, Drexel University Performing Arts, 2020-2021</li>
+        </ul>
+
+        <h2 class="resume">
+            Personal Affiliations and Activities
+        </h2>
+        <ul class="resume">
+            <li>Actor, Pegasus Production Company, 2016-2019</li>
+            <li>Volunteer, S.A.I.L. Program at Ocean County Library, 2015-2016</li>
+        </ul>
+    </main>
+    <footer>
+        <h2 class="downloadbutton">
+            <a class="downloadlink" href="files/liammailleyresume.pdf" download>
+                Download PDF
+            </a>
+        </h2>
+    </footer>
+</body>
+</html>

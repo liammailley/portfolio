@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../css/master.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Mailley - Work</title>
+    <style>
+        @media only screen and (min-width: 800px) { /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 800px */
+            header {
+                display: grid;
+                grid-template-columns: 1.5fr 3fr 1.5fr;
+                justify-content: space-evenly;
+                background-color: #eb5e55;
+                position: sticky;
+                max-width: 100%;
+                overflow: auto;
+                margin: auto;
+                top: 0;
+                padding: 0.2rem 0;
+            }
+            .socials-container {
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-end;
+                margin: auto 0;
+                max-width: 15%;
+            }
+            .socials {
+                max-width: 2rem;
+                padding: 0 0.5rem;
+                transition: all .2s ease-in-out;
+            }
+            .socials:hover {
+                transition: 0.4s;
+                transform: scale(0.75); 
+            }
+            .outer-nav-container {
+                display: flex;
+                flex-flow: column;
+                max-width: 40%;
+            }
+            .nav-container {
+                display: flex;
+                flex-flow: row;
+                justify-content: flex-start;
+            }
+            .bigbold {
+                letter-spacing: 0.2rem;
+                margin: 2rem 0 0 0;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #000000;
+                text-align: center;
+                max-width: 45%;
+            }
+            .bigbold-sub {
+                margin-left: 10px;
+            }
+            main {
+                background-color: #fdf0d5;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .greetings {
+                display: flex;
+                justify-content: center;
+                font-size: 3.2rem;
+                margin: 1rem 10px;
+            }
+            .bio {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                font-size: 2rem;
+                margin: 1rem 10px;
+                align-content: center;
+            }
+            .headshot {
+                padding: 0 0 0 2rem;
+            }
+            
+            /* Non-Header Styling */
+
+            /* Content Pages Grid Code */
+
+            .contentmain {
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+
+            .contenttitle {
+                font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+                margin: 1rem;
+            }
+
+            .contentdesc {
+                margin: 1rem;
+            }
+
+            .contentimages {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            #topleft {
+                grid-column: 1;
+                grid-row: 1;
+                border: 8px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+
+            #topright {
+                grid-column: 1;
+                grid-row: 2;
+                border: 8px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+
+            #bottomleft {
+                grid-column: 1;
+                grid-row: 3;
+                border: 8px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+
+            #bottomright {
+                grid-column: 1;
+                grid-row: 4;
+                border: 8px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+        
+        .contentmain {
+                display: grid;
+                grid-template: 50% 50% / 50% 50%;
+            }
+
+        #topleft {
+            grid-column: 1;
+            grid-row: 1;
+            border: 8px solid #fdf0d5;
+            background-image: url("../images/walking.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20.3125rem;
+        }
+
+        #topright {
+            grid-column: 2;
+            grid-row: 1;
+            border: 8px solid #fdf0d5;
+            background-image: url("../images/mugs.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20.3125rem;
+        }
+
+        #bottomleft {
+            grid-column: 1;
+            grid-row: 2;
+            background-image: url("../images/metedeconk.webp");
+            border: 8px solid #fdf0d5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20.3125rem;
+        }
+
+        #bottomright {
+            grid-column: 2;
+            grid-row: 2;
+            background-image: url("../images/theamericandream.webp");
+            border: 8px solid #fdf0d5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20.3125rem;
+        }
+
+        .navbutton {
+                transition: all .2s ease-in-out;
+            }
+        .navbutton:hover {
+            transition: 0.4s;
+            transform: scale(0.9); 
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="socials-container">
+            <a href="https://www.instagram.com/liammailley">
+                <img src="../images/insta_45x45.png" alt="Instagram Logo" class="socials">
+            </a>
+            <a href="https://www.linkedin.com/in/liam-mailley-bb5b69185">
+                <img src="../images/linkedin_45x45.png" alt="Linkedin Logo" class="socials">
+            </a>
+            <a href="https://github.com/liammailley">
+                <img src="../images/github_45x45.png" alt="Github Logo" class="socials">
+            </a>
+        </div>
+        <br>
+        <h1 class="bigbold">
+            LIAM MAILLEY
+        </h1>
+        <div class="outer-nav-container">
+            <p class="bigbold-sub">
+                student - ux/ui designer
+            </p>
+            <div class="nav-container">
+                <p class="navbutton">
+                    <a class="buttontext" href="../../index.html">
+                        HOME
+                    </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="../work.html">
+                        WORK
+                </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="../resume.html">
+                        RESUME
+                    </a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="contentmain">
+
+        <div id="topleft">
+        </div>
+
+        <div id="topright">
+        </div>
+
+        <div id="bottomleft">
+        </div>
+
+        <div id="bottomright">
+        </div>
+    </main>
+    <a href="https://www.instagram.com/liammphoto/" class="visitformore">
+        <h2 class="contenttitle">
+            Visit my photography Insta for more!
+        </h2>
+    </a>
+</body>
+</html>
