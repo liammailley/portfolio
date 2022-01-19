@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="css/master-phone.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/master-desktop.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/master.css" rel="stylesheet" type="text/css" media="all">
     <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <meta charset="UTF-8">
@@ -85,6 +88,8 @@
             /* Non-Header Styling */
 
             /* Grid Code */
+            
+            /* ALL OF THIS IS LIKELY OUTDATED NOW THAT WE HAVE THE NEW MODALS 
 
             .workmain {
                 display: grid;
@@ -185,11 +190,21 @@
                 transition: 0.4s;
                 transform: scale(0.9); 
             }
+            */
         }
     </style>
 </head>
 
 <body>
+
+    <audio id="sndWhoosh1"  src="sounds/whoosh1.wav" preload="auto"></audio>
+    <audio id="sndWhoosh2"  src="sounds/whoosh2.wav" preload="auto"></audio>
+
+    <script> //---------------SOUND DECLARES-------------------------
+        const whoosh1Obj = document.getElementById('sndWhoosh1');
+        const whoosh2Obj = document.getElementById('sndWhoosh2');
+    </script>
+
     <header>
         <div class="socials-container">
             <a href="https://www.instagram.com/liammailley">
@@ -230,7 +245,422 @@
         </div>
     </header>
 
-    <main class="workmain">
+    <div class="container">
+        <!--<h1>Gallery</h1>-->
+        
+        <div class="gallery-wrap">
+            <div id="handle" class="item item-1">
+                <div class="item_hoverbox">
+                    <a id="myBtn_digArt" class="item_text">Digital Art</a>
+                </div>
+            </div>
+            <div class="item item-2">
+                <div class="item_hoverbox">
+                    <a id="myBtn_physArt" class="item_text">Physical Art</a>
+                </div>
+            </div>
+            <!--<div class="item item-3">
+                <div class="item_hoverbox">
+                    <a id="myBtn_uxui" class="item_text">UX/UI</a>
+                </div>
+            </div>-->
+            <div class="item item-4">
+                <div class="item_hoverbox">
+                    <a id="myBtn_photo" class="item_text">Photography</a>
+                </div>
+            </div>
+            <div class="item item-5">
+                <div class="item_hoverbox">
+                    <a id="myBtn_case" class="item_text">Case Studies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+         <!-----------------------------MODAL CODE-------------------------------------------->
+
+         <div id="myModal_digArt" class="modal">
+            <div id="myModal_digArt-content" class="modal-content">
+                 <span class="close_digArt">&times;</span>
+                 <h1 class="contenttitle">Digital Art</h1>
+                 
+                 <main class="contentmain">
+  
+                      <div id="firstleft">
+                           <h1 class="contenttitle">
+                                DUCK Clothing
+                           </h1>
+                           <p class="contentdesc">
+                                Entire line of duck-themed clothing designed for my little brother. All clothing designs and site setup are by me; you can check it out at duckclothing.storenvy.com.
+                           </p>
+                      </div>
+                 
+                      <div id="firstright">
+                           <img src="images/duck.webp" alt="DUCK" class="contentimages">
+                      </div>
+                 
+                 
+                      <div id="secondleft">
+                           <img src="images/lightpollution.webp" alt="Light Pollution" class="contentimages">
+                      </div>
+                 
+                      <div id="secondright">
+                           <h1 class="contenttitle">
+                                <em>Four Alarm - Light Pollution</em> Album Cover
+                           </h1>
+                           <p class="contentdesc">
+                                Album cover for my upcoming debut album! Stay tuned!
+                           </p>
+                      </div>
+                 
+                 
+                      <div id="thirdleft">
+                           <h1 class="contenttitle">
+                                Scene From <em>Inception</em>
+                           </h1>
+                           <p class="contentdesc">
+                                Vector-traced movie still, recreated using black, white, and 3 shades of gray in-between.
+                           </p>
+                      </div>
+                 
+                      <div id="thirdright">
+                           <img src="images/inception.webp" alt="Inception" class="contentimages">
+                      </div>
+                 
+                 
+                      <div id="fourthleft">
+                           <img src="images/pollen.webp" alt="Pollen" class="contentimages">
+                      </div>
+                 
+                      <div id="fourthright">
+                           <h1 class="contenttitle">
+                                Pollen
+                           </h1>
+                           <p class="contentdesc">
+                                An album cover comissioned by a friend of mine. Features custom typography and photography.
+                           </p>
+                      </div>
+                 
+                 
+                      <div id="fifthleft">
+                           <h1 class="contenttitle">
+                                Pop-Art Self Portrait
+                           </h1>
+                           <p class="contentdesc">
+                                An assignment for Design II. Created via vector tracing of collaged images.
+                           </p>
+                      </div>
+                 
+                      <div id="fifthright">
+                           <img src="images/colorfulportrait.webp" alt="Design II Final" class="contentimages">
+                      </div>
+                 
+                 
+                      <div id="sixthleft">
+                           <img src="images/desktop.webp" alt="My Desktop" class="contentimages">
+                      </div>
+                 
+                      <div id="sixthright">
+                           <h1 class="contenttitle">
+                                <em>My Desktop</em>
+                           </h1>
+                           <p class="contentdesc">
+                                Eccentric and cluttered pop-art piece, taken via screenshot of my laptop desktop.
+                           </p>
+                      </div>
+                 
+                 
+                      <div id="seventhleft">
+                           <h1 class="contenttitle">
+                                Drexel Collage
+                           </h1>
+                           <p class="contentdesc">
+                                Personal piece, experimenting with text, depth, and vibrating edge.
+                           </p>
+                      </div>
+                 
+                      <div id="seventhright">
+                           <img src="images/drexelcollage.webp" alt="Drexel Collage" class="contentimages">
+                      </div>
+                 </main>
+            </div>
+       </div>
+  
+       <div id="myModal_physArt" class="modal">
+            <div id="myModal_physArt-content" class="modal-content">
+                 <span class="close_physArt">&times;</span>
+                 <h1 class="contenttitle">Physical Art</h1>
+  
+                 <main class="contentmain">
+  
+                      <div id="firstleft">
+                           <h1 class="contenttitle">
+                                Introductory Drawing Final
+                           </h1>
+                           <p class="contentdesc">
+                                This was my final project for Introductory Drawing, a still life charcoal piece incorporating the techniques of scale and shading practiced in the class.
+                           </p>
+                      </div>
+                 
+                      <div id="firstright">
+                           <img src="images/charcoalfinal.webp" alt="Charcoal Final" class="contentimages">
+                      </div>
+                 
+                 
+                      <div id="secondleft">
+                           <img src="images/shoes.webp" alt="Shoes" class="contentimages">
+                      </div>
+                 
+                      <div id="secondright">
+                           <h1 class="contenttitle">
+                                Shoe Sketch
+                           </h1>
+                           <p class="contentdesc">
+                                One of my all-time best sketches.
+                           </p>
+                      </div>
+                 
+                 
+                      <div id="thirdleft">
+                           <h1 class="contenttitle">
+                                Charcoal Still Life #1
+                           </h1>
+                           <p class="contentdesc">
+                                A charcoal still life painted as part of Introductory Drawing.
+                           </p>
+                      </div>
+                 
+                      <div id="thirdright">
+                           <img src="images/bottle.webp" alt="Bottle" class="contentimages">
+                      </div>
+                 
+                 
+                      <div id="fourthleft">
+                           <img src="images/kettle.webp" alt="Kettle" class="contentimages">
+                      </div>
+                 
+                      <div id="fourthright">
+                           <h1 class="contenttitle">
+                                Charcoal Still Life #2
+                           </h1>
+                           <p class="contentdesc">
+                                A charcoal still life painted as part of Introductory Drawing.
+                           </p>
+                      </div>
+                 
+                 
+                      <div id="fifthleft">
+                           <h1 class="contenttitle">
+                                Happy 12th Birthday!
+                           </h1>
+                           <p class="contentdesc">
+                                This was a design for my little cousin's 12th birthday. Has a strong 80s aesthetic.
+                           </p>
+                      </div>
+                 
+                      <div id="fifthright">
+                           <img src="images/johnny12th.webp" alt="Johnny's 12th" class="contentimages">
+                      </div>
+                 
+                 </main>
+            </div>
+       </div>
+  
+       <div id="myModal_uxui" class="modal">
+            <div id="myModal_uxui-content" class="modal-content">
+                 <span class="close_uxui">&times;</span>
+                 <h1 class="contenttitle">UX/UI Work</h1>
+  
+                 <div class="content">
+                      <img src="images/home.svg" alt="Jersey Shore Pirates" class="contentimages">
+                      <h2 class="contenttitle">
+                           Jersey Shore Pirates Redesign
+                      </h2>
+                      <p class="contentdesc">
+                           An assignment for UI Design I. I redesigned the website of my summer job, prioritizing the user's ability to schedule a trip quickly and easily. (Only the Home and Booking pages have been wireframed, as per the assignment's requests.)
+                      </p>
+                      <a href="https://projects.invisionapp.com/prototype/cki3wheup003x7r01igohm78w/play" class="wireframelink">
+                           <h2 class="contenttitle">
+                                Check out the whole wireframe here!
+                           </h2>
+                      </a>
+                 </div>
+  
+            </div>
+       </div>
+  
+       <div id="myModal_photo" class="modal">
+            <div id="myModal_photo-content"class="modal-content">
+                 <span class="close_photo">&times;</span>
+                 <h1 class="contenttitle">Photography</h1>
+  
+                 <main class="contentmain">
+  
+                      <div id="topleft">
+                      </div>
+                 
+                      <div id="topright">
+                      </div>
+                 
+                      <div id="bottomleft">
+                      </div>
+                 
+                      <div id="bottomright">
+                      </div>
+                 </main>
+                 <a href="https://www.instagram.com/liammphoto/" class="visitformore">
+                      <h2 class="contenttitle">
+                           Visit my photography Insta for more!
+                      </h2>
+                 </a>
+            </div>
+       </div>
+  
+       <div id="myModal_case" class="modal">
+            <div id="myModal_case-content"class="modal-content">
+                 <span class="close_case">&times;</span>
+                 <h1 class="contenttitle">Case Studies</h1>
+                 <h2>All future case studies will be uploaded here! Check back soon!</h2>
+            </div>
+       </div>
+  
+  
+  
+       <script>
+            var slideSource = document.getElementById('myModal_digArt');
+  
+            document.getElementById('handle').onclick = function () {
+                 slideSource.classList.toggle('fade');
+            }
+       </script>
+  
+  
+  <script> // --------------- DIGITAL ART MODAL --------------------
+       var modal_digArt = document.getElementById("myModal_digArt");
+       var btn_digArt = document.getElementById("myBtn_digArt");
+       var span_digArt = document.getElementsByClassName("close_digArt")[0];
+       // When the user clicks the button, open the modal 
+       btn_digArt.onclick = function() {
+            whoosh1Obj.play();
+            modal_digArt.style.display = "block";
+            document.getElementById("myModal_digArt-content").animate([
+                 // keyframes
+                 { transform: 'scale(0.1)' },
+                 { transform: 'scale(1)' }
+                 ], {
+                 // timing options
+                 duration: 250,
+                 iterations: 1,
+            });
+       }
+       // When the user clicks on <span> (x), close the modal
+            span_digArt.onclick = function() {
+                      modal_digArt.style.display = "none";
+                      whoosh2Obj.play();
+            }
+  </script>
+  
+  <script> // --------------- PHYSICAL ART MODAL --------------------
+       var modal_physArt = document.getElementById("myModal_physArt");
+       var btn_physArt = document.getElementById("myBtn_physArt");
+       var span_physArt = document.getElementsByClassName("close_physArt")[0];
+       // When the user clicks the button, open the modal 
+       btn_physArt.onclick = function() {
+            whoosh1Obj.play();
+            modal_physArt.style.display = "block";
+            document.getElementById("myModal_physArt-content").animate([
+                 // keyframes
+                 { transform: 'scale(0.1)' },
+                 { transform: 'scale(1)' }
+                 ], {
+                 // timing options
+                 duration: 250,
+                 iterations: 1,
+            });
+       }
+       // When the user clicks on <span> (x), close the modal
+       span_physArt.onclick = function() {
+            whoosh2Obj.play();
+            modal_physArt.style.display = "none";
+       }
+  </script>
+  
+  <script> // --------------- UX/UI MODAL --------------------
+       var modal_uxui = document.getElementById("myModal_uxui");
+       var btn_uxui = document.getElementById("myBtn_uxui");
+       var span_uxui = document.getElementsByClassName("close_uxui")[0];
+       // When the user clicks the button, open the modal 
+       btn_uxui.onclick = function() {
+            whoosh1Obj.play();
+            modal_uxui.style.display = "block";
+            document.getElementById("myModal_uxui-content").animate([
+                 // keyframes
+                 { transform: 'scale(0.1)' },
+                 { transform: 'scale(1)' }
+                 ], {
+                 // timing options
+                 duration: 250,
+                 iterations: 1,
+            });
+       }
+       // When the user clicks on <span> (x), close the modal
+       span_uxui.onclick = function() {
+            whoosh2Obj.play();
+            modal_uxui.style.display = "none";
+       }
+  </script>
+  
+  <script> // --------------- PHOTOGRAPHY MODAL --------------------
+       var modal_photo = document.getElementById("myModal_photo");
+       var btn_photo = document.getElementById("myBtn_photo");
+       var span_photo = document.getElementsByClassName("close_photo")[0];
+       // When the user clicks the button, open the modal 
+       btn_photo.onclick = function() {
+            whoosh1Obj.play();
+            modal_photo.style.display = "block";
+            document.getElementById("myModal_photo-content").animate([
+                 // keyframes
+                 { transform: 'scale(0.1)' },
+                 { transform: 'scale(1)' }
+                 ], {
+                 // timing options
+                 duration: 250,
+                 iterations: 1,
+            });
+       }
+       // When the user clicks on <span> (x), close the modal
+       span_photo.onclick = function() {
+            whoosh2Obj.play();
+            modal_photo.style.display = "none";
+       }
+  </script>
+  
+  <script> // --------------- CASE STUDIES MODAL --------------------
+       var modal_case = document.getElementById("myModal_case");
+       var btn_case = document.getElementById("myBtn_case");
+       var span_case = document.getElementsByClassName("close_case")[0];
+       // When the user clicks the button, open the modal 
+       btn_case.onclick = function() {
+            whoosh1Obj.play();
+            modal_case.style.display = "block";
+            document.getElementById("myModal_case-content").animate([
+                 // keyframes
+                 { transform: 'scale(0.1)' },
+                 { transform: 'scale(1)' }
+                 ], {
+                 // timing options
+                 duration: 250,
+                 iterations: 1,
+            });
+       }
+       // When the user clicks on <span> (x), close the modal
+       span_case.onclick = function() {
+            whoosh2Obj.play();
+            modal_case.style.display = "none";
+       }
+  </script>
+
+    <!--<main class="workmain">
         <div id="topleft" onclick="location.href='pages/digitalart.html';" style="cursor: pointer;">
                 <div class="overlay">
                     <h1 class="overlayText">
@@ -259,6 +689,6 @@
                     </h1>
                 </div>
         </div>
-    </main>
+    </main>-->
 </body>
 </html>

@@ -246,6 +246,8 @@ p.artdesc {
 
 /* Work Page Grid Code */
 
+/* ALL PROBABLY OUTDATED WITH NEW MODALS 
+
 .workmain {
     display: grid;
     grid-template: 25% 25% 25% 25% / 100%;
@@ -342,8 +344,11 @@ p.artdesc {
     width: 100%
 }
 
+*/
 
 /* Content Pages Grid Code */
+
+/* ALL PROBABLY OUTDATED WITH NEW MODALS 
 
 .contentmain {
     display: grid;
@@ -490,6 +495,8 @@ p.artdesc {
     max-width: 100%;
     margin: auto;
 }
+
+*/
 
 .wireframelink {
     text-align: center;
